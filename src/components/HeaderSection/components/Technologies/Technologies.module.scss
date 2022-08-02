@@ -1,0 +1,42 @@
+@import '../../../../css/adaptive.scss';
+
+.wrap {
+  display: none;
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  background-size: 100%;
+  transition: background-image 200ms;
+
+  @include screen-m {
+    display: block;
+    bottom: 5px;
+    right: 0;
+    width: 344px;
+    height: 407px;
+    background-image: url('./images/image-small-white.svg');
+  }
+
+  @include screen-l {
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1716/719;
+    background-image: url('./images/image-white.svg');
+  }
+}
+
+:global(.dark-theme) {
+  .wrap {
+    @include screen-m {
+      background-image: url('./images/image-small-black.svg');
+    }
+
+    @include screen-l {
+      background-image: url('./images/image-black.svg');
+    }
+  }
+}

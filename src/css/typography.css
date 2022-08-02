@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Space Grotesk";
+  font-weight: 600;
+  src: url("../fonts/Space_Grotesk/SpaceGrotesk-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-weight: 400;
+  src: url("../fonts/Space_Grotesk/SpaceGrotesk-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 400;
+  src: url("../fonts/PlusJakartaSans/PlusJakartaSans-Regular.ttf");
+}

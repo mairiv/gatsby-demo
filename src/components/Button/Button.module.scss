@@ -1,0 +1,105 @@
+@import '../../css/adaptive.scss';
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.main {
+  font-family: var(--font-sans);
+  font-size: var(--font-md);
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--black-color);
+  text-align: center;
+  transition: transform 200ms, color 200ms, background-color 200ms, border 200ms;
+  letter-spacing: 0.01em;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:focus {
+    outline: none;
+    transform: scale(1.1);
+  }
+
+  @include screen-l {
+    font-size: var(--font-lg);
+    line-height: 24px;
+  }
+}
+
+.uiType_button {
+  padding: 12px 18px;
+  border-width: 2px;
+
+  @include screen-s {
+    padding: 12px 22px;
+  }
+
+  @include screen-l {
+    padding: 14px 25px;
+  }
+}
+
+.uiType_button {
+  font-size: var(--font-md);
+  line-height: 20px;
+  border-style: solid;
+  padding: 12px 18px;
+  border-width: 2px;
+
+  @include screen-s {
+    padding: 12px 22px;
+  }
+
+  @include screen-l {
+    font-size: var(--font-lg);
+    padding: 16px 30px;
+  }
+}
+
+.uiType_primaryButton {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.uiType_secondaryButton {
+  background-color: var(--white-color);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.uiType_link {
+  padding: 14px 0;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: var(--primary-color);
+  text-decoration-thickness: 2px;
+
+  &:focus {
+    outline: none;
+    text-decoration-thickness: 4px;
+  }
+}
+
+:global(.dark-theme) {
+  .uiType_link {
+    color: var(--white-color);
+  }
+
+  .uiType_secondaryButton {
+    background-color: var(--gray-15-color);
+    color: var(--white-color);
+  }
+}

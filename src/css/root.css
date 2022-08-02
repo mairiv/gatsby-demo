@@ -1,0 +1,45 @@
+:root {
+  --font-sans: 'Plus Jakarta Sans', Helvetica, Arial, sans-serif;
+  --font-grotesk: 'Space Grotesk', Helvetica, Arial, sans-serif;
+
+  --font-xl: 24px;
+  --font-lg: 18px;
+  --font-md: 16px;
+  --font-sm: 14px;
+  --font-sx: 12px;
+
+  --primary-color: #0066f5;
+  --black-color: #0b0b0e;
+  --gray-15-color: #242429;
+  --white-color: #fff;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-y: scroll;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: sans-serif;
+  font-family: var(--font-sans);
+  font-weight: normal;
+  margin: 0;
+  transition: background-color 200ms;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+*:before {
+  box-sizing: inherit;
+}
+
+*:after {
+  box-sizing: inherit;
+}

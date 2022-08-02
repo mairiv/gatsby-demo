@@ -1,0 +1,27 @@
+@import '../../css/adaptive.scss';
+
+.main {
+  padding-top: 72px;
+  color: var(--black-color);
+  transition: color 200ms;
+
+  @include screen-l {
+    padding-top: 80px;
+  }
+}
+
+.toggler {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+:global(.dark-theme) {
+  background-color: var(--gray-15-color);
+
+  .main {
+    color: var(--white-color);
+  }
+}
